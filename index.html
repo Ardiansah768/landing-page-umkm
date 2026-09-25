@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Coffee - Cita Rasa Kopi Otentik</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-stone-50 text-stone-800 font-sans antialiased">
+
+    <!-- Header / Navbar -->
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 bg-stone-900/90 backdrop-blur-md text-white">
+        <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold tracking-wider text-amber-500 flex items-center gap-2">
+                <i class="fa-solid fa-mug-hot"></i> La Coffee
+            </a>
+            
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#hero" class="hover:text-amber-500 transition">Beranda</a>
+                <a href="#tentang" class="hover:text-amber-500 transition">Tentang Kami</a>
+                <a href="#menu" class="hover:text-amber-500 transition">Menu</a>
+                <a href="#testimoni" class="hover:text-amber-500 transition">Testimoni</a>
+                <a href="#kontak" class="hover:text-amber-500 transition">Kontak</a>
+            </nav>
+
+            <a href="#kontak" class="hidden md:inline-block bg-amber-600 hover:bg-amber-700 text-white px-5 py-2 rounded-full text-sm font-semibold transition">
+                Pesan Sekarang
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-btn" class="md:hidden text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-stone-900 border-t border-stone-800 px-4 pt-2 pb-4 space-y-3 mt-4">
+            <a href="#hero" class="block hover:text-amber-500 transition py-1">Beranda</a>
+            <a href="#tentang" class="block hover:text-amber-500 transition py-1">Tentang Kami</a>
+            <a href="#menu" class="block hover:text-amber-500 transition py-1">Menu</a>
+            <a href="#testimoni" class="block hover:text-amber-500 transition py-1">Testimoni</a>
+            <a href="#kontak" class="block hover:text-amber-500 transition py-1">Kontak</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative h-screen flex items-center justify-center bg-cover bg-center text-white" style="background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1600&q=80');">
+        <div class="text-center max-w-3xl px-4 mt-16">
+            <span class="text-amber-400 font-semibold tracking-widest uppercase text-sm mb-3 block">Selamat Datang di La Coffee</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">Nikmati Cita Rasa Kopi Otentik Terbaik</h1>
+            <p class="text-base md:text-lg text-stone-300 mb-8 max-w-2xl mx-auto">Dipetik dari biji kopi pilihan nusantara dan diseduh oleh barista berpengalaman untuk menemani setiap momen berharga Anda.</p>
+            <div class="flex justify-center gap-4 flex-wrap">
+                <a href="#menu" class="bg-amber-600 hover:bg-amber-700 text-white font-semibold px-8 py-3 rounded-full transition shadow-lg">Lihat Menu</a>
+                <a href="#kontak" class="bg-transparent border-2 border-white hover:bg-white hover:text-stone-900 text-white font-semibold px-8 py-3 rounded-full transition">Kunjungi Kami</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Kami -->
+    <section id="tentang" class="py-20 bg-stone-100">
+        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=800&q=80" alt="Tentang La Coffee" class="rounded-2xl shadow-xl w-full object-cover h-96">
+                <div class="absolute -bottom-6 -right-6 bg-amber-600 text-white p-6 rounded-xl shadow-lg hidden sm:block">
+                    <p class="text-3xl font-bold">100%</p>
+                    <p class="text-sm">Biji Kopi Arabika Pilihan</p>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold text-stone-900 mb-4">Dedikasi Kopi Kualitas Tinggi</h2>
+                <div class="w-16 h-1 bg-amber-600 mb-6"></div>
+                <p class="text-stone-600 mb-4 leading-relaxed">
+                    Di <strong>La Coffee</strong>, kami percaya bahwa secangkir kopi lebih dari sekadar minuman. Ini adalah perpaduan rasa, aroma, dan cerita dari para petani lokal.
+                </p>
+                <p class="text-stone-600 mb-6 leading-relaxed">
+                    Kami menyangrai biji kopi secara mandiri untuk menjaga kualitas rasa yang konsisten, menghadirkan nuansa hangat dan nyaman bagi siapapun yang berkunjung.
+                </p>
+                <ul class="space-y-3 text-stone-700 font-medium">
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-amber-600"></i> Biji kopi segar di-roast setiap minggu</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-amber-600"></i> Suasana kafe yang nyaman untuk bekerja & bersantai</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-amber-600"></i> Barista ramah dan profesional</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Favorit -->
+    <section id="menu" class="py-20 bg-stone-50">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-stone-900 mb-2">Menu Spesial Kami</h2>
+            <p class="text-stone-600 mb-8">Pilihan minuman dan cemilan favorit pengunjung</p>
+
+            <!-- Menu Filter -->
+            <div class="flex justify-center gap-2 mb-10 flex-wrap">
+                <button class="menu-tab active bg-amber-600 text-white px-5 py-2 rounded-full text-sm font-medium transition" data-category="all">Semua</button>
+                <button class="menu-tab bg-stone-200 hover:bg-amber-600 hover:text-white text-stone-700 px-5 py-2 rounded-full text-sm font-medium transition" data-category="coffee">Kopi</button>
+                <button class="menu-tab bg-stone-200 hover:bg-amber-600 hover:text-white text-stone-700 px-5 py-2 rounded-full text-sm font-medium transition" data-category="non-coffee">Non-Kopi</button>
+                <button class="menu-tab bg-stone-200 hover:bg-amber-600 hover:text-white text-stone-700 px-5 py-2 rounded-full text-sm font-medium transition" data-category="snack">Cemilan</button>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Item 1 -->
+                <div class="menu-item bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition" data-category="coffee">
+                    <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=600&q=80" alt="Espresso" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-semibold text-stone-900">Espresso Double</h3>
+                            <span class="text-amber-600 font-bold">Rp 22.000</span>
+                        </div>
+                        <p class="text-stone-600 text-sm">Ekstraksi biji kopi Arabika kental dengan kroma sempurna.</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="menu-item bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition" data-category="coffee">
+                    <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=600&q=80" alt="Caffe Latte" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-semibold text-stone-900">Caffe Latte</h3>
+                            <span class="text-amber-600 font-bold">Rp 28.000</span>
+                        </div>
+                        <p class="text-stone-600 text-sm">Perpaduan manisnya susu hangat dan espresso bertesktur lembut.</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="menu-item bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition" data-category="non-coffee">
+                    <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=600&q=80" alt="Matcha Latte" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-semibold text-stone-900">Matcha Latte</h3>
+                            <span class="text-amber-600 font-bold">Rp 30.000</span>
+                        </div>
+                        <p class="text-stone-600 text-sm">Bubuk matcha asli Jepang yang diseduh bersama susu segar.</p>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="menu-item bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition" data-category="snack">
+                    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&q=80" alt="Croissant" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-semibold text-stone-900">Butter Croissant</h3>
+                            <span class="text-amber-600 font-bold">Rp 25.000</span>
+                        </div>
+                        <p class="text-stone-600 text-sm">Roti renyah bermentega yang sangat cocok dipadukan dengan kopi.</p>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="menu-item bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition" data-category="coffee">
+                    <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=600&q=80" alt="Cold Brew" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-semibold text-stone-900">Cold Brew Signature</h3>
+                            <span class="text-amber-600 font-bold">Rp 32.000</span>
+                        </div>
+                        <p class="text-stone-600 text-sm">Kopi ekstraksi dingin selama 12 jam dengan nuansa rasanya yang halus.</p>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="menu-item bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition" data-category="snack">
+                    <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=600&q=80" alt="Brownies" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-semibold text-stone-900">Fudge Brownies</h3>
+                            <span class="text-amber-600 font-bold">Rp 20.000</span>
+                        </div>
+                        <p class="text-stone-600 text-sm">Kue cokelat pekat dengan tekstur lembut di bagian dalam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimoni -->
+    <section id="testimoni" class="py-20 bg-stone-900 text-white">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-2">Apa Kata Pelanggan?</h2>
+            <p class="text-stone-400 mb-12">Pengalaman dari penikmat kopi di tempat kami</p>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-stone-800 p-6 rounded-xl text-left border border-stone-700">
+                    <div class="text-amber-500 mb-4 flex gap-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-stone-300 mb-6 italic">"Tempat favorit saya buat kerja remote. Caffe Latte-nya pas, gak terlalu manis dan tempatnya tenang banget."</p>
+                    <div class="font-semibold">Rian Pratama</div>
+                    <div class="text-xs text-stone-400">Software Engineer</div>
+                </div>
+
+                <div class="bg-stone-800 p-6 rounded-xl text-left border border-stone-700">
+                    <div class="text-amber-500 mb-4 flex gap-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-stone-300 mb-6 italic">"Cold brew-nya segar banget! Pelayanannya ramah dan lokasi kafe sangat strategis."</p>
+                    <div class="font-semibold">Siti Aminah</div>
+                    <div class="text-xs text-stone-400">Content Creator</div>
+                </div>
+
+                <div class="bg-stone-800 p-6 rounded-xl text-left border border-stone-700">
+                    <div class="text-amber-500 mb-4 flex gap-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-stone-300 mb-6 italic">"Croissant-nya luar biasa renyah dipadu sama Espresso Double. Sangat direkomendasikan!"</p>
+                    <div class="font-semibold">Budi Santoso</div>
+                    <div class="text-xs text-stone-400">Arsitek</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak & Lokasi -->
+    <section id="kontak" class="py-20 bg-stone-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-stone-900 mb-2">Kunjungi atau Hubungi Kami</h2>
+                <p class="text-stone-600">Kami siap menyajikan kopi terbaik untuk Anda</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Form Pesan -->
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <h3 class="text-xl font-bold text-stone-900 mb-4">Kirim Pesan</h3>
+                    <form id="contact-form" class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-stone-700 mb-1">Nama Lengkap</label>
+                            <input type="text" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-amber-600 outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-stone-700 mb-1">Email</label>
+                            <input type="email" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-amber-600 outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-stone-700 mb-1">Pesan / Reservasi</label>
+                            <textarea rows="4" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-amber-600 outline-none"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 rounded-lg transition">
+                            Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Info Kontak -->
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-amber-100 text-amber-600 p-3 rounded-lg text-xl">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-stone-900">Alamat</h4>
+                            <p class="text-stone-600">Jl. Kopi Utama No. 123, Jakarta Selatan</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="bg-amber-100 text-amber-600 p-3 rounded-lg text-xl">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-stone-900">Jam Operasional</h4>
+                            <p class="text-stone-600">Senin - Minggu: 08.00 - 22.00 WIB</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="bg-amber-100 text-amber-600 p-3 rounded-lg text-xl">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-stone-900">Telepon / Whatsapp</h4>
+                            <p class="text-stone-600">+62 812 3456 7890</p>
+                        </div>
+                    </div>
+
+                    <!-- Placeholder Peta -->
+                    <div class="w-full h-48 bg-stone-300 rounded-xl flex items-center justify-center text-stone-500 font-semibold">
+                        <i class="fa-solid fa-map-location-dot mr-2"></i> Area Peta Google Maps
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-stone-400 py-8 border-t border-stone-800 text-center">
+        <div class="max-w-6xl mx-auto px-4">
+            <p class="mb-4">&copy; 2026 La Coffee. All Rights Reserved.</p>
+            <div class="flex justify-center space-x-6 text-xl text-stone-300">
+                <a href="#" class="hover:text-amber-500 transition"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-amber-500 transition"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="hover:text-amber-500 transition"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
