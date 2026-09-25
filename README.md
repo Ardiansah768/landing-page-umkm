@@ -31,7 +31,7 @@ landing-page-umkm/
 
 Website dapat diakses melalui GitHub Pages:
 
-`[https://USERNAME.github.io/landing-page-umkm/](https://ardiansah768.github.io/landing-page-umkm/)`
+`(https://ardiansah768.github.io/landing-page-umkm/)`
 
 ## 👨‍💻 Developer
 
